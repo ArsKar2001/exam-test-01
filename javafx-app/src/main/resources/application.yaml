@@ -1,0 +1,21 @@
+javafx:
+  app:
+    logo: "/img/logo/beauty_logo.png"
+    title: "Exam Test"
+spring:
+  h2:
+    console:
+      enabled: true
+  main:
+    web-application-type: none
+  datasource:
+    driver-class-name: org.h2.Driver
+    continue-on-error: true
+    url: jdbc:h2:file:./h2db/dbexam
+    username: sa
+  jpa:
+    database: h2
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
